@@ -1,8 +1,10 @@
+# fly -t lite set-pipeline -c pipeline/pipeline.yaml -p tests:phpunit
+
 resources:
   - name: resource-concourse-php
     type: git
     source:
-      uri: https://github.com/mjsilva/concourse-php.git
+      uri: https://github.com/abinhho/concourse-php.git
       branch: master
 
 jobs:
